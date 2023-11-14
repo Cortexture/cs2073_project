@@ -1,0 +1,147 @@
+Airline Ticketing System
+
+Employees 
+	Verify that the customer did a legitimate purchase online
+	We need to play to the strengths of the human-side of this process
+		We can automate the trivial shit
+Customers
+Online ordering system for customers
+		Some sort of confirmation of purchase
+Order tickets in person 
+
+“Field research” i.e. look at how other airline ticketing systems work
+
+Locations
+Routes to locations
+Start time – to ending time
+Crew assignments
+All sorts of positions
+
+Predefine routes
+Managing airplanes all sorts of things
+Cargo of passengers – logistics
+
+Have functionality for hotels for passengers in the area of where the plane is going
+Reservation system
+
+Okay this week assignment is making a design draft document. 
+
+
+===================================================================
+Camille
+General Consensus for pretty much ALL booking websites for airfare:
+
+Destination (Both to and from)
+Dates(Departure dates to and from)
+Travelers (Number of people…)
+Types of Tickets(Roundtrip, One-way, Multi City)
+Seats (Economy, Premium economy, Business Class, First Class)
+Flight insurance (Price drop protection)
+
+Steps to Purchase Tickets organized (By Website) if needed for creating an booking process
+  algorithm/pseudocode:
+ 
+Expedia:
+ 
+1.Input all flight information needed. Flight type, etc.       
+2. User chooses flight time and chooses and airline to fly with. Depending on software, list may be
+  sorted by airline.
+3. Once the user picks and airline they need to choose their flight class, reiterating business, first
+  class, economy, etc. This step is where the user can choose to add price drop protection.
+4. User may choose the returning flight information; user will adjust accordingly depending on their
+  flight details. If the user hasn’t added flight protection this is where the user may add.
+5.User may choose seats.
+6. User inputs government details and such. Email, phone, etc.
+7.Once again if the user forgot to add flight protection and such, this step prompts the user again to
+  see if maybe they changed their mind.  
+8.User inputs payment details.  CC/ DC billing address
+9.User completes ticket booking process. User is prompted to check email for a confirmation /proof of
+  purchase. Yay
+  
+Booking.com:
+ 
+Beginning process is similar To other websites. Only difference is UI…number of travelers, destination,
+  etc.
+ 
+1. User chooses flight details. To reiterate: Round trip, One way, Multi city, so type of flight and also
+  the flight class.
+2.User may choose the type of airline they want to fly with, choose departure time and date and return
+  time and date.
+3. User may choose flight class again if they forgot.
+4. User is prompted to fill out their contact details (phone # and email). The user may also choose to
+  receive SMS notifications on the status of their flight.
+5.User is prompted to fill out traveler information (legal info)
+6.User may also choose to have flight protection at this step.
+7.User is prompted to fill out their preferred method of payment.
+8. Flight is booked once the user confirms!
+ 
+Kayak:
+ 
+1. User is prompted to choose departure date and time just like the other booking services.
+2. User chooses if they want a direct flight or a different flight type. Almost identical to the other
+  websites.
+3. User may choose if they want checked bags at this step.
+4. User may add traveler details based off of their government information.
+If the user has a frequent flyer status, they may opt to use their points at this step.
+5. User chooses seats at this step.
+6. Finally, the user may choose to insure their flight.
+7. User inputs payment information..
+8. User purchases ticket.
+ 
+
+=====================================================================
+Spencer
+Management: Joint between admins, airline officials, and the public.
+Scheduling for pilots/ground staff, assign flights to gates and time of departure, air traffic management
+  for handling/ parking for planes. 
+Jobs: check-in, bag checks, security, retail, maintenance, and customer service.
+Use nicknames for airplanes to make managing easier and codenames for flights.
+
+
+
+=====================================================================
+Mario
+
+https://youtu.be/1-m_Jjse-cs?si=W_CwLM1RTsdBISV0
+
+https://juliabook.chkwon.net/book/network
+
+
+========================================================================
+Anelise
+Topic: (Airport management, customer service and TSA operations.)
+
+Airports function like small towns or cities
+There is a general manager who oversees the airport 
+there are a bunch of other smaller managers who oversee specific tasks in the airport
+-Operations manager
+- Safety manager
+- Environmental manager
+-General manager
+airports must operate in accordance with the regulations from the FAA and TSA
+tsa officers will check tickets, luggage and x-ray passengers for contraband
+Airport customer services can change customer flights 
+Most airplane tracking actually works through crowdsourcing
+AODB functions include:
+Reference-data processing
+Seasonal scheduling
+Daily flight schedule processing
+Processing of payments
+The most important information that this database holds is the seasonal schedule. It displays information
+  about commercial flight movements for a season. It contains the flight code, type of aircraft, their
+  estimated arrival and departure times, multi-stop flights, operation days of the week, exception dates,
+  and other relevant information. This information entered manually or downloaded allocates such
+  resources as arrival or departure gates, air-bridges and stands, check-in desks.
+Check in kiosks can be used by customers
+
+Links:
+-https://www.dhs.gov/employee-resources/transportation-security-administration-tsa
+-https://www.vaughn.edu/blog/day-life-airport-manager/
+-https://www.flyingmag.com/airport-managers-run-show/
+-https://learn.org/articles/What_do_Airport_Managers_Do.html#:~:text=Airport%20managers%20oversee%20the%20daily,the%20director%20of%20airport%20security.
+-https://simpleflying.com/how-do-flight-tracking-websites-work/#:~:text=This%20is%20done%20mostly%20using,area%20to%20the%20service%20provider.
+
+THIS ONE IS DETAILED AS FUCK:
+https://www.altexsoft.com/blog/travel/airport-technology-management-operations-software-solutions-and-vendors/
+
+
