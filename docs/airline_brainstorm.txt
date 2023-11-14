@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+/*
+Airline structs:
+
+Planes (PLANE-identifer, type, max seats)
+Airport (maybe an array of all possible departures/destinations)
+Terminal
+Passenger (PASSENGER-fname, lname, mi, bdate, gender)
+Flight path (ROUTE-start location, end location)
+(FLIGHT CREW-caption, 1st ofic, up 4 flight crew)
+(SEATMAP - up to 180 seats every seat has a status 1st, main, eco)
+(FLIGHT-route, plane, depart time/date, flight crew, seat map)
+(TICKET-passenger, flight, purchase amount, seat)
+*/
+
+
+//Global declaration of struct typedef
+typedef struct {
+    int startLocation;
+    int endLocation;
+    int passID[6][30];
+} ROUTE;
+
+int main() {
+    
+    //ROUTE route1 = {1, 2};
+    //printf("%d %d\n", route1.startLocation, route1.endLocation);
+    //route1.startLocation=3;
+    //printf("%d %d\n", route1.startLocation, route1.endLocation);
+    
+    ROUTE routes[10];
+    
+    routes[0].startLocation=1;
+    routes[0].endLocation=3;
+    
+    printf("%d %d\n", routes[0].startLocation, routes[0].endLocation);
+    
+    routes[0].passID[0][0]=10500;
+    printf("%d", routes[0].passID[0][0]);
+    
+    return 0;
+}
