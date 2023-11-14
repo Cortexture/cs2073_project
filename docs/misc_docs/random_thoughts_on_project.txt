@@ -1,0 +1,22 @@
+The airlines industry problem with ancient it
+
+Peak times
+Changing plans due to weather
+Dealing with Pilots Union
+Dealing with disrupted airlines
+  and the chaining disruption caused by it
+Be able to cancel flights early enough so that
+  customers can change plans
+There are particular temperatures where flights are not safe
+Dealing with the other airlines
+Dealing with the boarding process of airlines
+Carriers apparently have a point to point model.
+handle routing so that pilots are crews and fufill the next flight in the route
+GE Skysolver poach it for details on routing
+Routing may involve sending a passenger less flight to accomplish routing issues
+Network Optimization Problem for routing. 
+routing must involve not only schedules for flights but also schedules for crews
+Deal with FAA cancelation on all flights, and get airbourne planes to ground ASAP
+Global distribution system
+  AMADEUS // SABRE // TRAVELPORT
+
