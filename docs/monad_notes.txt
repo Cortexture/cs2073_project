@@ -1,7 +1,0 @@
-function arguments => enum, void *
-
-enum having the datatypes, 
-void * idk
-
-return struct might not be ideal
-  maybe return pointer to struct
