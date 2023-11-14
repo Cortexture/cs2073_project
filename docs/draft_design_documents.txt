@@ -1,3 +1,46 @@
 Team 6 Draft Design Document
 
+Management
+  Dashboards to monitor relevant details regarding airport wide administrative information, department
+    specific, airline specific, and information regarding the public.
+  Assigning flight information for times of arrival and departure
+  Air traffic management
+    Aircraft Queues
+    Parking of Aircraft
+Scheduling management for:
+    Pilots
+    Flight Attendants
+    Ground Crew
+    Airport Commercial Facilities
+    General Employees
+
+Employees
+  Operations Manager
+  Safety Manager
+  Environmental Manager
+  General Manager
+  TSA Officers
+  Airport Customer Service
+  Processing of Payments
+  Online Ticket Sale Confirmation
+
+Customers
+  Online Portal to pay for tickets
+    Destination (Both to and from)
+    Dates (Departure dates to and from)
+    Travelers (Number of people)
+    Types of Tickets (Roundtrip, One way, Multi-City)
+    Seats (Economy, Premium Economy, Business Class, First Class)
+    Flight Insurance (Price drop protection)
+
+There needs to be a security layer, so that Customers do not have access to Airport staff information.
+  Employees should only be able to access information relevant to their role. Management should have
+  access to their own information, and the information within all employee dashboards.
+
+It should not be possible for Customers to forge air travel ticket orders, some verification proving
+  authenticity is necessary.
+Routing software for flights should be able to handle cancellations, inclement weather, crew schedules,
+  and should be limited to domestic travel to reduce complexity. 
+Airline software should be robust enough to handle all sorts of test cases, unit tests would need to be
+  designed. 
 
