@@ -1,0 +1,52 @@
+Team Project Code Draft
+Due: Sun Nov 19, 2023 11:59pmDue: Sun Nov 19, 2023 11:59pm
+
+Steps to complete the group project:
+1) (Past assignment) Write down the design for your transport company program in word document using
+  pseudo code. You should list all the functions you think you will need. Then you should write out all
+  the program logic you think you will need. You should also state what information/data each function
+  needs to receive and what type of data it will return.
+2) (Past assignment) Refine your design based on what you have learned in the middle of the course.
+  Ensure that all functions, variables, parameters, etc. are declared and stated in this design. Be sure
+  that the logic for each function is drafted in this document.
+3) (This assignment) Write the code to implement your design. Draft as much of your program as possible.
+4) (Future Assignment) Test your program and make fixes to any bugs.
+Program specification / user requirements:
+For a passing grade:
+
+    Your program should be function based. That means that nearly all features should take place in
+      user-defined functions.
+    Your program should include a main menu for the user and use a master loop to control the program
+      until the user opts to quit.
+    Your program should have two types of users - company and customer. Options for each should be
+      visible based on the type of user is engaged with the software.
+    Input by the user should be validated (i.e. numbers are in the correct range).
+    At a minimum, customers should be able to book passage/cargo transport, change, and remove
+      reservations.
+    At a minimum, company users should be able to add/remove routes, add/remove vehicles, add/remove
+      destinations.
+    You may set a limit on how many vehicles, routes, and destinations may be used in the program. For
+      example, you could define the size of your multidimensional arrays at compile time if desired.
+    Meeting minimums that compile and run without runtime or logic errors will ensure a passing grade.
+
+For a grade of "B" or higher:
+
+    Add at least one additional functionality such as managing staffing (any), recreation (cruise), etc.
+    Write your program so that your data can be stored in data files prior to closing the program.
+    Write your program so that your data can be loaded from data files when it starts.
+
+For a grade of "A" or higher:
+
+    To earn an "A" a team must add additional functionality that implements all of the following:
+        Structs
+        Searching
+        Sorting 
+
+Additional hints/tips:
+
+    Students will need to everything we have learned in the course about variables, flow control, arrays,
+      pointers, and structs to successfully implement this program.
+    Start early.
+    Set a meeting plan for the team.
+    Submit one draft design per team.
+
