@@ -8,15 +8,15 @@
 
 ## Customers
 - [ ] Generate Flight Information by Destination
--- [ ] Flight Data
---- [ ] Destination
---- [ ] Departure Dates
---- [ ] Departure Time
---- [ ] Arrival Time
---- [ ] Number of Guests
---- [ ] Seat Number
---- [ ] Seat Types
---- [ ] Check Avaiability
+    - [ ] Flight Data
+        - [ ] Destination
+        - [ ] Departure Dates
+        - [ ] Departure Time
+        - [ ] Arrival Time
+        - [ ] Number of Guests
+        - [ ] Seat Number
+        - [ ] Seat Types
+        - [ ] Check Avaiability
 - [ ] Send a confimation code for the Flight ticket purchased
 
 ## Employees
