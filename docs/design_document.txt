@@ -2,7 +2,9 @@
 Int destinations;
 
 
-Loop for (destinations--, destinations > 0;) {generate int flight (int start point, int destination, int flight time, int seat number) ; Array[seat types] } 
+Loop for (destinations--, destinations > 0;) 
+{generate int flight (int start point, int destination, int flight time, int seat number) ; 
+Array[seat types] } 
 
 Fopen (flightDetails.txt)}
 
