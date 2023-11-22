@@ -10,12 +10,13 @@
 - [ ] Online Portal
     - [ ] Generate Flight Information by Destination
         - [ ] Flight Data
-            - [ ] Destination
-            - [ ] Departure Dates
-            - [ ] Departure Time
+            - [x] Destination
+            - [x] Departure Dates
+            - [x] Departure Time
+            - [ ] Arrival Dates
             - [ ] Arrival Time
             - [ ] Number of Guests
-            - [ ] Type of Ticket (Roundtrip, One Way, Multi-city)
+            - [x] Type of Ticket (Roundtrip, One Way, Multi-city)
             - [ ] Flight Insurance (price drop protection)
             - [ ] Seat Number
             - [ ] Seat Types
@@ -36,32 +37,37 @@
 
 ## Management
 - [ ] Structs for Management
-    - [ ] Planes
-        - [ ] Identifier
-        - [ ] Type
-        - [ ] Max Seats
-        - [ ] Range
-    - [ ] Airport
-        - [ ] Identifier
-        - [ ] Array of Departures 
+    - [x] Planes
+        - [x] Identifier
+        - [x] Type
+        - [x] Max Seats
+        - [x] Range
+    - [x] Airport
+        - [x] Identifier
+        - [x] Array of Departures 
         - [ ] Array of Destinations
     - [ ] Terminal
         - [ ] Array for Flights Scheduled
-    - [ ] Passenger 
-        - [ ] First Name
-        - [ ] Last Name 
-        - [ ] Middle Inital
-        - [ ] Birthdate 
-        - [ ] Gender
-    - [ ] Flight Path
-        - [ ] Route Start Location
-        - [ ] Route End Location
+    - [x] Passenger 
+        - [x] First Name
+        - [x] Last Name 
+        - [x] Middle Inital
+        - [x] Birthdate 
+        - [x] Gender
+    - [x] Flight Path
+        - [x] Route Start Location
+        - [x] Route End Location
+    - [x] Employee
+        - [x] First Name
+        - [x] Last Name
+        - [x] Middle Inital
+        - [x] Title
     - [ ] Flight Crew
         - [ ] Captain
         - [ ] 1st Officer
         - [ ] Flight Crew
-    - [ ] Seat Map
-        - [ ] Fille Status
+    - [x] Seat Map
+        - [ ] Fill Status
         - [ ] 1st Class
         - [ ] Regular Class
         - [ ] Economy Class
