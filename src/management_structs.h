@@ -1,81 +1,81 @@
 #include <stdbool.h>
 
-struct Date {
+typedef struct {
   int month;
   int day;
   int year;
-};
+} Date;
 
-struct DateTime {
-  struct Date date;
+typedef struct {
+  Date date;
   int hour;
   int minute;
-};
+} DateTime;
 
-struct Name {
+typedef struct {
   char first_name[15];
   char last_name[30];
   char middle_inital[1];
-};
+} Name;
 
-struct SeatType {
+typedef struct {
   bool first_class;
   bool regular_class;
   bool economy_class;
-};
+} SeatType;
 
-struct Plane {
+typedef struct {
   char identifier[7]; // ICAO 3 letters for company name, 4 numbers for ID
   char type[4]; // ICAO Type Code
   float range;
   int max_seats;
-};
+} Plane;
 
-struct Airport {
+typedef struct {
   char identifier[3]; // 3 letter codeword
   char destinations[10][3];
-};
+} Airport;
 
-struct SeatMap {
-  struct Plane plane;
+typedef struct {
+  Plane plane;
   bool filled;
-};
+} SeatMap;
 
-struct FlightPath {
-  struct Airport route_start;
-  struct Airport route_end;
-};
+typedef struct {
+  Airport route_start;
+  Airport route_end;
+} FlightPath;
 
-struct Employee {
-  struct Name name;
+typedef struct {
+  Name name;
   char title[15];
-};
+} Employee;
 
-struct FlightCrew {
-  struct Employee identity;
-  struct DateTime schedule_start;
-  struct DateTime schedule_end;
-};
+typedef struct {
+  Employee identity;
+  DateTime schedule_start;
+  DateTime schedule_end;
+} FlightCrew;
 
-struct FlightRoute {
-  struct Plane plane;
-  struct DateTime depart_time;
-  struct FlightPath flight_path;
-  struct FlightCrew flight_crew;
-};
+typedef struct {
+  Plane plane;
+  DateTime depart_time;
+  FlightPath flight_path;
+  FlightCrew flight_crew;
+} FlightRoute;
 
-struct Ticket {
-  struct FlightPath flight_path;
-  struct FlightRoute flight;
-  struct SeatType seat_type;
-};
+typedef struct {
+  FlightPath flight_path;
+  FlightRoute flight;
+  SeatType seat_type;
+} Ticket;
 
-struct Passenger {
-  struct Name name;
-  struct Date birth_date;
+typedef struct {
+  Name name;
+  Date birth_date;
   char gender[2]; // M, F, NB, et cetera
-  struct Ticket ticket;
-};
+  Ticket ticket;
+} Passenger;
 
 
 
