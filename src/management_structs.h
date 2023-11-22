@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdbool.h>
 
 struct Date {
   int month;
@@ -41,7 +39,6 @@ struct SeatMap {
   struct Plane plane;
   bool filled;
 };
-
 
 struct FlightPath {
   struct Airport route_start;

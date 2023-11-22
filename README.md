@@ -80,6 +80,13 @@
         - [x] Flight
         - [x] Purchase Amount
         - [x] Seat
+- [ ] Hard Coding Struct Information
+    - [ ] Planes
+    - [ ] Airport
+    - [ ] Names
+    - [ ] Date and Times
+    - [ ] Passengers
+        - [ ] Passengers Except Richards
 - [ ] Dashboards to monitor Details
     - [ ] Management Specific
     - [ ] Airline Specific
