@@ -1,610 +1,3 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Insert favicon -->
-            <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
-            <link rel="manifest" href="./assets/img/site.webmanifest">
-            <link rel="mask-icon" href="./assets/img/safari-pinned-tab.svg">
-            <!-- Styles -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="./assets/css/gfonts.css">
-<link rel="stylesheet" href="./assets/fontawesome/css/all.css">
-<link rel="stylesheet" href="./assets/css/atc_nav_search.css">
-<link rel="stylesheet" href="./assets/css/atc_styles.css">
-<link rel="stylesheet" href="./assets/css/atc_faa_ol.css">
-<link rel="stylesheet" href="./assets/css/olstyles.css">
-<link rel="stylesheet" href="./assets/css/atc_cust_styles.css">
-<title>Aircraft Company/Telephony/Three−Letter Designator Encode</title>
-<script >bazadebezolkohpepadr="1469349413"</script><script type="text/javascript" src="https://www.faa.gov/akam/13/57947db2"  defer></script></head><body id="atc-body"><header class="header"><nav role="navigation" class="navbar">
-    <div class="navbar-brand">
-      <div class="publication_name"><a class="navbar-item" href="./"><i
-            class="fas fa-home"></i>&nbsp;7340.2M</a>
-      </div><div class="navbar-search">
-<form class="navbar-item usa-search usa-search-small" id="search_form" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
-    <input type="hidden" name="affiliate" id="affiliate" value="cnt__content">
-     <input placeholder="Search the 7340.2" type="search" title="Search field" name="query" id="query" class="form-control typeahead-enabled tt-input" autocomplete="on">
-     <button id="search-button" type="submit" class="button-reset color-inherit"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-fw"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg> <span class="sr-only">Search!</span></button>
-   </form>
-   </div><button aria-label="Navigation button" class="navbar-burger" data-target="topbar-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <div id="topbar-nav" class="navbar-menu">
-      <div class="navbar-end">
-        <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-link">7340.2 by Chapter Number</div>
-          <div class="navbar-dropdown"><a class="navbar-item atc-chap-number-dropdown" href="./chap_1.html" rel="noopener">Chapter 1. General</a><a class="navbar-item atc-chap-number-dropdown" href="./chap_2.html" rel="noopener">Chapter 2. United States of America Aeronautical Contractions</a><a class="navbar-item atc-chap-number-dropdown" href="./chap_3.html" rel="noopener">Chapter 3. ICAO Aircraft Company/Telephony/Three−Letter Designator and U.S. Special Telephony/Call Signs</a><a class="navbar-item atc-chap-number-dropdown" href="./chap_4.html" rel="noopener">Chapter 4. Aircraft Nationality Marks, National Emblems, and Common Marks</a>                       
-           
-              <a class="navbar-item atc-chap-number-dropdown" href="./appendix_a.html" rel="noopener">Appendix A. TWO−LETTER STATE AND TERRITORY ABBREVIATIONS</a>                                                             <a class="navbar-item atc-chap-number-dropdown" href="./appendix_b.html" rel="noopener">Appendix B. MISCELLANEOUS ABBREVIATIONS</a>                                                             <a class="navbar-item atc-chap-number-dropdown" href="./appendix_c.html" rel="noopener">Appendix C. TIME ZONES (EAST TO WEST)</a>                                                             <a class="navbar-item atc-chap-number-dropdown" href="./appendix_d.html" rel="noopener">Appendix D. WEIGHTS AND MEASURES</a>                                                             <a class="navbar-item atc-chap-number-dropdown" href="./appendix_e.html" rel="noopener">Appendix E. VOLUME</a>                                                             <a class="navbar-item atc-chap-number-dropdown" href="./appendix_f.html" rel="noopener">Appendix F. COMPASS DIRECTIONS</a>                      </div>
-        </div>
-        <a class="navbar-item" href="http://www.faa.gov/air_traffic/publications/" target="_blank"
-          aria-label="Air Traffic Publications (New Window)" rel="noopener">
-          ATPUBS
-        </a>
-      </div>
-    </div>
-  </nav>
-</header><div class="main-wrapper" id="main-wrapper"><div class="navigation-container">
-  <aside class="navigation">
-    <div class="panels">
-      <div class="navigation-menu is-active" data-panel="menu">
-        <nav role="navigation" class="nav-menu"><h3 class="title"><a href="./" arial-label="7340.2 home page">7340.2 by Topic</a></h3>
-          <ul class="nav-list">	
-			<li class="nav-item is-active" data-depth="0" data-id="menu-0-4">
-			  <ul class="nav-list">
-				<li class="nav-item" data-depth="1" data-id="menu-1-/chap_0">
-				  <button class="nav-toggle" aria-label="Navigation toggler"></button>
-				  <span class="nav-text" style="cursor: pointer;">General Information</span>
-				  <ul class="nav-list">
-					<li class="nav-item is-active" data-depth="2" data-id="menu-2-/chap0_basic_info">
-						<a class="nav-link" href="./chap0_cam.html">Changes, Additions, and Modifications</a>
-					</li>					
-				  </ul>
-				</li>
-			  </ul>
-			</li>		  
-			<li class="nav-item" data-depth="0" data-id="menu-0-4">
-              <ul class="nav-list">
-                <li class="nav-item" data-depth="1" data-id="menu-1-/chap_1">
-                  <button class="nav-toggle" aria-label="Navigation toggler"></button>
-                  <span class="nav-text" style="cursor: pointer;">General</span>
-                  <ul class="nav-list">
-					<li class="nav-item" data-depth="2" data-id="menu-2-/chap1_section_1">
-                      <a class="nav-link" href="./chap1_section_1.html">Introduction</a>
-                    </li>
-					<li class="nav-item" data-depth="2" data-id="menu-2-/chap1_section_2">
-                      <a class="nav-link" href="./chap1_section_2.html">Contractions</a>
-                    </li>
-				  </ul>
-                </li>
-              </ul>
-            </li>
-			<li class="nav-item" data-depth="0" data-id="menu-0-4">
-              <ul class="nav-list">
-                <li class="nav-item" data-depth="1" data-id="menu-1-5">
-                  <button class="nav-toggle" aria-label="Navigation toggler"></button>
-                  <span class="nav-text" style="cursor: pointer;">United States of America Aeronautical Contractions</span>
-                  <ul class="nav-list">
-				   <li class="nav-item" data-depth="2" data-id="menu-2-6">
-					  <button class="nav-toggle" aria-label="Navigation toggler"></button>
-					  <span class="nav-text" style="cursor: pointer;"></span>
-					  <a class="nav-link" href="./chap2_section_1.html">Decode</a>
-					  <ul class="nav-list">
- 						<li class="nav-item" data-depth="3" data-id="menu-3-7">
- 							<a class="nav-link" href="./chap2_section_1.html#linkA">A</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-8">
- 							<a class="nav-link" href="./chap2_section_1.html#linkB">B</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-9">
- 							<a class="nav-link" href="./chap2_section_1.html#linkC">C</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-10">
- 							<a class="nav-link" href="./chap2_section_1.html#linkD">D</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-11">
- 							<a class="nav-link" href="./chap2_section_1.html#linkE">E</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-12">
- 							<a class="nav-link" href="./chap2_section_1.html#linkF">F</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-13">
- 							<a class="nav-link" href="./chap2_section_1.html#linkG">G</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-14">
- 							<a class="nav-link" href="./chap2_section_1.html#linkH">H</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-15">
- 							<a class="nav-link" href="./chap2_section_1.html#linkI">I</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-16">
- 							<a class="nav-link" href="./chap2_section_1.html#linkJ">J</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-17">
- 							<a class="nav-link" href="./chap2_section_1.html#linkK">K</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-18">
- 							<a class="nav-link" href="./chap2_section_1.html#linkL">L</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-19">
- 							<a class="nav-link" href="./chap2_section_1.html#linkM">M</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-20">
- 							<a class="nav-link" href="./chap2_section_1.html#linkN">N</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-21">
- 							<a class="nav-link" href="./chap2_section_1.html#linkO">O</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-22">
- 							<a class="nav-link" href="./chap2_section_1.html#linkP">P</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-23">
- 							<a class="nav-link" href="./chap2_section_1.html#linkQ">Q</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-24">
- 							<a class="nav-link" href="./chap2_section_1.html#linkR">R</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-25">
- 							<a class="nav-link" href="./chap2_section_1.html#linkS">S</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-26">
- 							<a class="nav-link" href="./chap2_section_1.html#linkT">T</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-27">
- 							<a class="nav-link" href="./chap2_section_1.html#linkU">U</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-28">
- 							<a class="nav-link" href="./chap2_section_1.html#linkV">V</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-29">
- 							<a class="nav-link" href="./chap2_section_1.html#linkW">W</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-30">
- 							<a class="nav-link" href="./chap2_section_1.html#linkX">X</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-31">
- 							<a class="nav-link" href="./chap2_section_1.html#linkY">Y</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-32">
- 							<a class="nav-link" href="./chap2_section_1.html#linkZ">Z</a>		
- 						</li>
-					  </ul>
-			       </li>						
-					 
-				   <li class="nav-item" data-depth="2" data-id="menu-2-33">
-					  <button class="nav-toggle" aria-label="Navigation toggler"></button>
-					  <span class="nav-text" style="cursor: pointer;"></span>
-					  <a class="nav-link" href="./chap2_section_2.html">Encode</a>
-					  <ul class="nav-list">
- 						<li class="nav-item" data-depth="3" data-id="menu-3-34">
- 							<a class="nav-link" href="./chap2_section_2.html#linkA">A</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-35">
- 							<a class="nav-link" href="./chap2_section_2.html#linkB">B</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-36">
- 							<a class="nav-link" href="./chap2_section_2.html#linkC">C</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-37">
- 							<a class="nav-link" href="./chap2_section_2.html#linkD">D</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-38">
- 							<a class="nav-link" href="./chap2_section_2.html#linkE">E</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-39">
- 							<a class="nav-link" href="./chap2_section_2.html#linkF">F</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-40">
- 							<a class="nav-link" href="./chap2_section_2.html#linkG">G</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-41">
- 							<a class="nav-link" href="./chap2_section_2.html#linkH">H</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-42">
- 							<a class="nav-link" href="./chap2_section_2.html#linkI">I</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-43">
- 							<a class="nav-link" href="./chap2_section_2.html#linkJ">J</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-44">
- 							<a class="nav-link" href="./chap2_section_2.html#linkK">K</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-45">
- 							<a class="nav-link" href="./chap2_section_2.html#linkL">L</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-46">
- 							<a class="nav-link" href="./chap2_section_2.html#linkM">M</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-47">
- 							<a class="nav-link" href="./chap2_section_2.html#linkN">N</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-48">
- 							<a class="nav-link" href="./chap2_section_2.html#linkO">O</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-49">
- 							<a class="nav-link" href="./chap2_section_2.html#linkP">P</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-50">
- 							<a class="nav-link" href="./chap2_section_2.html#linkQ">Q</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-51">
- 							<a class="nav-link" href="./chap2_section_2.html#linkR">R</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-52">
- 							<a class="nav-link" href="./chap2_section_2.html#linkS">S</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-53">
- 							<a class="nav-link" href="./chap2_section_2.html#linkT">T</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-54">
- 							<a class="nav-link" href="./chap2_section_2.html#linkU">U</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-55">
- 							<a class="nav-link" href="./chap2_section_2.html#linkV">V</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-56">
- 							<a class="nav-link" href="./chap2_section_2.html#linkW">W</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-57">
- 							<a class="nav-link" href="./chap2_section_2.html#linkX">X</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-58">
- 							<a class="nav-link" href="./chap2_section_2.html#linkY">Y</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-59">
- 							<a class="nav-link" href="./chap2_section_2.html#linkZ">Z</a>		
- 						</li>
-					  </ul>
-			       </li>		
-				  </ul>
-                </li>
-              </ul>
-            </li>
-			<li class="nav-item" data-depth="0" data-id="menu-0-60">
-              <ul class="nav-list">
-                <li class="nav-item" data-depth="1" data-id="menu-1-61">
-                  <button class="nav-toggle" aria-label="Navigation toggler"></button>
-                  <span class="nav-text" style="cursor: pointer;">ICAO Aircraft Company/Telephony/Three−Letter Designator and U.S. Special Telephony/Call Signs</span>
-                  <ul class="nav-list">
-				   <li class="nav-item" data-depth="2" data-id="menu-2-62">
-					  <button class="nav-toggle" aria-label="Navigation toggler"></button>
-					  <span class="nav-text" style="cursor: pointer;"></span>
-					  <a class="nav-link" href="./chap3_section_1.html">Aircraft Company/Telephony/Three−Letter Designator Encode</a>
-					  <ul class="nav-list">
- 					  	<li class="nav-item" data-depth="3" data-id="menu-3-63">
- 							<a class="nav-link" href="./chap3_section_1.html#$no">#</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-64">
- 							<a class="nav-link" href="./chap3_section_1.html#$A">A</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-65">
- 							<a class="nav-link" href="./chap3_section_1.html#$B">B</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-66">
- 							<a class="nav-link" href="./chap3_section_1.html#$C">C</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-67">
- 							<a class="nav-link" href="./chap3_section_1.html#$D">D</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-68">
- 							<a class="nav-link" href="./chap3_section_1.html#$E">E</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-69">
- 							<a class="nav-link" href="./chap3_section_1.html#$F">F</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-70">
- 							<a class="nav-link" href="./chap3_section_1.html#$G">G</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-71">
- 							<a class="nav-link" href="./chap3_section_1.html#$H">H</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-72">
- 							<a class="nav-link" href="./chap3_section_1.html#$I">I</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-73">
- 							<a class="nav-link" href="./chap3_section_1.html#$J">J</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-74">
- 							<a class="nav-link" href="./chap3_section_1.html#$K">K</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-75">
- 							<a class="nav-link" href="./chap3_section_1.html#$L">L</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-76">
- 							<a class="nav-link" href="./chap3_section_1.html#$M">M</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-77">
- 							<a class="nav-link" href="./chap3_section_1.html#$N">N</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-78">
- 							<a class="nav-link" href="./chap3_section_1.html#$O">O</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-79">
- 							<a class="nav-link" href="./chap3_section_1.html#$P">P</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-80">
- 							<a class="nav-link" href="./chap3_section_1.html#$Q">Q</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-81">
- 							<a class="nav-link" href="./chap3_section_1.html#$R">R</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-82">
- 							<a class="nav-link" href="./chap3_section_1.html#$S">S</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-83">
- 							<a class="nav-link" href="./chap3_section_1.html#$T">T</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-84">
- 							<a class="nav-link" href="./chap3_section_1.html#$U">U</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-85">
- 							<a class="nav-link" href="./chap3_section_1.html#$V">V</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-86">
- 							<a class="nav-link" href="./chap3_section_1.html#$W">W</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-87">
- 							<a class="nav-link" href="./chap3_section_1.html#$X">X</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-88">
- 							<a class="nav-link" href="./chap3_section_1.html#$Z">Z</a>		
- 						</li>
-					  </ul>					  
-                    </li>
-				   <li class="nav-item" data-depth="2" data-id="menu-2-89">
-                      <button class="nav-toggle" aria-label="Navigation toggler"></button>
-					  <span class="nav-text" style="cursor: pointer;"></span>
-					  <a class="nav-link" href="./chap3_section_2.html">Telephony/Aircraft Company/Three−Letter Designator Decode</a>
-					  <ul class="nav-list">
- 						<li class="nav-item" data-depth="3" data-id="menu-3-90">
- 							<a class="nav-link" href="./chap3_section_2.html#$A">A</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-91">
- 							<a class="nav-link" href="./chap3_section_2.html#$B">B</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-92">
- 							<a class="nav-link" href="./chap3_section_2.html#$C">C</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-93">
- 							<a class="nav-link" href="./chap3_section_2.html#$D">D</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-94">
- 							<a class="nav-link" href="./chap3_section_2.html#$E">E</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-95">
- 							<a class="nav-link" href="./chap3_section_2.html#$F">F</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-96">
- 							<a class="nav-link" href="./chap3_section_2.html#$G">G</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-97">
- 							<a class="nav-link" href="./chap3_section_2.html#$H">H</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-98">
- 							<a class="nav-link" href="./chap3_section_2.html#$I">I</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-99">
- 							<a class="nav-link" href="./chap3_section_2.html#$J">J</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-100">
- 							<a class="nav-link" href="./chap3_section_2.html#$K">K</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-101">
- 							<a class="nav-link" href="./chap3_section_2.html#$L">L</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-102">
- 							<a class="nav-link" href="./chap3_section_2.html#$M">M</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-103">
- 							<a class="nav-link" href="./chap3_section_2.html#$N">N</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-104">
- 							<a class="nav-link" href="./chap3_section_2.html#$O">O</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-105">
- 							<a class="nav-link" href="./chap3_section_2.html#$P">P</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-106">
- 							<a class="nav-link" href="./chap3_section_2.html#$Q">Q</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-107">
- 							<a class="nav-link" href="./chap3_section_2.html#$R">R</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-108">
- 							<a class="nav-link" href="./chap3_section_2.html#$S">S</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-109">
- 							<a class="nav-link" href="./chap3_section_2.html#$T">T</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-110">
- 							<a class="nav-link" href="./chap3_section_2.html#$U">U</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-111">
- 							<a class="nav-link" href="./chap3_section_2.html#$V">V</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-112">
- 							<a class="nav-link" href="./chap3_section_2.html#$W">W</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-113">
- 							<a class="nav-link" href="./chap3_section_2.html#$X">X</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-114">
- 							<a class="nav-link" href="./chap3_section_2.html#$Y">Y</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-115">
- 							<a class="nav-link" href="./chap3_section_2.html#$Z">Z</a>		
- 						</li>
-					  </ul>					  
-                    </li>
-				   <li class="nav-item" data-depth="2" data-id="menu-2-116">
-                      <button class="nav-toggle" aria-label="Navigation toggler"></button>
-					  <span class="nav-text" style="cursor: pointer;"></span>
-					  <a class="nav-link" href="./chap3_section_3.html">Three−Letter Designator/Aircraft Company/Telephony Decode</a>
-					  <ul class="nav-list">
- 						<li class="nav-item" data-depth="3" data-id="menu-3-117">
- 							<a class="nav-link" href="./chap3_section_3.html#$A">A</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-118">
- 							<a class="nav-link" href="./chap3_section_3.html#$B">B</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-119">
- 							<a class="nav-link" href="./chap3_section_3.html#$C">C</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-120">
- 							<a class="nav-link" href="./chap3_section_3.html#$D">D</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-121">
- 							<a class="nav-link" href="./chap3_section_3.html#$E">E</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-122">
- 							<a class="nav-link" href="./chap3_section_3.html#$F">F</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-123">
- 							<a class="nav-link" href="./chap3_section_3.html#$G">G</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-124">
- 							<a class="nav-link" href="./chap3_section_3.html#$H">H</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-125">
- 							<a class="nav-link" href="./chap3_section_3.html#$I">I</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-126">
- 							<a class="nav-link" href="./chap3_section_3.html#$J">J</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-127">
- 							<a class="nav-link" href="./chap3_section_3.html#$K">K</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-128">
- 							<a class="nav-link" href="./chap3_section_3.html#$L">L</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-129">
- 							<a class="nav-link" href="./chap3_section_3.html#$M">M</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-130">
- 							<a class="nav-link" href="./chap3_section_3.html#$N">N</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-131">
- 							<a class="nav-link" href="./chap3_section_3.html#$O">O</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-132">
- 							<a class="nav-link" href="./chap3_section_3.html#$P">P</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-133">
- 							<a class="nav-link" href="./chap3_section_3.html#$Q">Q</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-134">
- 							<a class="nav-link" href="./chap3_section_3.html#$R">R</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-135">
- 							<a class="nav-link" href="./chap3_section_3.html#$S">S</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-136">
- 							<a class="nav-link" href="./chap3_section_3.html#$T">T</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-137">
- 							<a class="nav-link" href="./chap3_section_3.html#$U">U</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-138">
- 							<a class="nav-link" href="./chap3_section_3.html#$V">V</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-139">
- 							<a class="nav-link" href="./chap3_section_3.html#$W">W</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-140">
- 							<a class="nav-link" href="./chap3_section_3.html#$X">X</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-141">
- 							<a class="nav-link" href="./chap3_section_3.html#$Y">Y</a>		
- 						</li>		
- 						<li class="nav-item" data-depth="3" data-id="menu-3-142">
- 							<a class="nav-link" href="./chap3_section_3.html#$Z">Z</a>		
- 						</li>
-					  </ul>					  
-                    </li>
-					<li class="nav-item" data-depth="2" data-id="menu-2-143">
-					  <a class="nav-link" href="./chap3_section_4.html">U.S. Special Telephony/Call Signs</a>
-                    </li>
-				  </ul>
-                </li>
-              </ul>
-            </li>			
-			<li class="nav-item" data-depth="0" data-id="menu-0-144">
-              <ul class="nav-list">
-                <li class="nav-item" data-depth="1" data-id="menu-1-145">
-                  <button class="nav-toggle" aria-label="Navigation toggler"></button>
-                  <span class="nav-text" style="cursor: pointer;">Aircraft Nationality Marks, National Emblems, and Common Marks</span>
-                  <ul class="nav-list"><li class="nav-item" data-depth="2" data-id="menu-2-146">
-                      <a class="nav-link" href="./chap4_section_1.html">Nationality Marks Arranged Alphanumerically</a>
-                    </li><li class="nav-item" data-depth="2" data-id="menu-2-147">
-                      <a class="nav-link" href="./chap4_section_2.html">Nationality Marks Arranged Alphabetically By State</a>
-                    </li><li class="nav-item" data-depth="2" data-id="menu-2-148">
-                      <a class="nav-link" href="./chap4_section_3.html">Nationality Emblems</a>
-                    </li></ul>
-                </li>
-              </ul>
-            </li><!-- Appendices -->
-            <li class="nav-item" data-depth="0" data-id="menu-0-149">
-              <button class="nav-toggle" aria-label="Navigation toggler"></button>
-              <span class="nav-text" style="cursor: pointer;">Appendices</span>
-              <ul class="nav-list">
-                <li class="nav-item" data-depth="2" data-id="menu-2-150">
-                  <a class="nav-link" href="./appendix_a.html">TWO−LETTER STATE AND TERRITORY ABBREVIATIONS</a>
-                </li>
-                <li class="nav-item" data-depth="2" data-id="menu-2-151">
-                  <a class="nav-link" href="./appendix_b.html">MISCELLANEOUS ABBREVIATIONS</a>
-                </li>
-                <li class="nav-item" data-depth="2" data-id="menu-2-152">
-                  <a class="nav-link" href="./appendix_c.html">TIME ZONES (EAST TO WEST)</a>
-                </li>
-                <li class="nav-item" data-depth="2" data-id="menu-2-153">
-                  <a class="nav-link" href="./appendix_d.html">WEIGHTS AND MEASURES</a>
-                </li>
-                <li class="nav-item" data-depth="2" data-id="menu-2-154">
-                  <a class="nav-link" href="./appendix_e.html">VOLUME</a>
-                </li>
-                <li class="nav-item" data-depth="2" data-id="menu-2-155">
-                  <a class="nav-link" href="./appendix_f.html">COMPASS DIRECTIONS</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="context">
-      </div>
-    </div>
-  </aside>
-</div><main class="main-content usa-content" id="main"><div class="toolbar" role="navigation">
-    <button title="navigation-toggle" class="navigation-toggle"></button>
-      <nav class="crumbs" aria-label="breadcrumbs">
-          <ul>
-            <!-- Get the chapter number from the section id --><!-- Link to chapter -->
-                <li class="crumb"> <a aria-label="Chapter title" class="chapter-link-title" href="./chap_3.html">ICAO Aircraft Company/Telephony/Three−Letter Designator and U.S. Special Telephony/Call Signs</a></li><li class="crumb">Aircraft Company/Telephony/Three−Letter Designator Encode</li>
-            </ul>
-      </nav>
-</div><body><a class="anchor" id="$no"></a><h2 class="center">Section 1. Aircraft Company/Telephony/Three−Letter Designator Encode</h2>
-<h3 class="center">#</h3>
-<table><thead><tr>
-    <th>
-    <p class="table-header-paragraph">Company
-    </p>
-    </th>
-    <th>
-    <p class="table-header-paragraph">Country
-    </p>
-    </th>
-    <th>
-    <p class="table-header-paragraph">Telephony </p>
-    </th>
-    <th>
-    <p class="table-header-paragraph">3Ltr </p>
-    </th>
-   </tr></thead>
-   <tbody>
 <tr>
     <td>
     <p class="table-content-paragraph">1 TIME AIRLINE (PTY) LTD </p>
@@ -3131,7 +2524,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AERO-BETA GMBH & CO., STUTTGART </p>
+    <p class="table-content-paragraph">AERO-BETA GMBH &amp; CO., STUTTGART </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -3593,7 +2986,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AERODIENST GMBH & CO. KG, NUERNBERG </p>
+    <p class="table-content-paragraph">AERODIENST GMBH &amp; CO. KG, NUERNBERG </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -3929,7 +3322,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AEROHELI INTERNATIONAL GMBH & CO KG </p>
+    <p class="table-content-paragraph">AEROHELI INTERNATIONAL GMBH &amp; CO KG </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -10215,7 +9608,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AIR TAXI & CARGO </p>
+    <p class="table-content-paragraph">AIR TAXI &amp; CARGO </p>
     </td>
     <td>
     <p class="table-content-paragraph">SUDAN </p>
@@ -10229,7 +9622,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AIR TAXI & CHARTER INTERNATIONAL, S.L. </p>
+    <p class="table-content-paragraph">AIR TAXI &amp; CHARTER INTERNATIONAL, S.L. </p>
     </td>
     <td>
     <p class="table-content-paragraph">SPAIN </p>
@@ -10369,7 +9762,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AIR TRANSPORT & TRANSIT REGIONAL </p>
+    <p class="table-content-paragraph">AIR TRANSPORT &amp; TRANSIT REGIONAL </p>
     </td>
     <td>
     <p class="table-content-paragraph">MADAGASCAR </p>
@@ -10915,7 +10308,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AIRBROCK MANAGEMENT & CHARTER SERVICES, INC. </p>
+    <p class="table-content-paragraph">AIRBROCK MANAGEMENT &amp; CHARTER SERVICES, INC. </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -12217,7 +11610,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AIRWAYS SERVICES & SUPPORT AS&S, C.A. </p>
+    <p class="table-content-paragraph">AIRWAYS SERVICES &amp; SUPPORT AS&amp;S, C.A. </p>
     </td>
     <td>
     <p class="table-content-paragraph">VENEZUELA </p>
@@ -14541,7 +13934,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">ARCUS AIR GMBH & CO. KG, ZWEIBRUECKEN </p>
+    <p class="table-content-paragraph">ARCUS AIR GMBH &amp; CO. KG, ZWEIBRUECKEN </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -16291,7 +15684,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AVANTI AIR GMBH & CO. KG, BURBACH </p>
+    <p class="table-content-paragraph">AVANTI AIR GMBH &amp; CO. KG, BURBACH </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -17341,7 +16734,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AVICON AVIATION CONSULTANTS & AGENTS </p>
+    <p class="table-content-paragraph">AVICON AVIATION CONSULTANTS &amp; AGENTS </p>
     </td>
     <td>
     <p class="table-content-paragraph">PAKISTAN </p>
@@ -17761,7 +17154,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">AYIT AVIATION & TOURISM </p>
+    <p class="table-content-paragraph">AYIT AVIATION &amp; TOURISM </p>
     </td>
     <td>
     <p class="table-content-paragraph">ISRAEL </p>
@@ -17933,7 +17326,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">B&H AIRLINES </p>
+    <p class="table-content-paragraph">B&amp;H AIRLINES </p>
     </td>
     <td>
     <p class="table-content-paragraph">BOSNIA AND HERZEGOVINA </p>
@@ -17947,7 +17340,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">B&K AERO KZ LLP </p>
+    <p class="table-content-paragraph">B&amp;K AERO KZ LLP </p>
     </td>
     <td>
     <p class="table-content-paragraph">KAZAKHSTAN </p>
@@ -18241,7 +17634,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">BAIRLINE FLUGGESELLSCHAFT MBH & CO.KG </p>
+    <p class="table-content-paragraph">BAIRLINE FLUGGESELLSCHAFT MBH &amp; CO.KG </p>
     </td>
     <td>
     <p class="table-content-paragraph">AUSTRIA </p>
@@ -21689,7 +21082,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">C & M AIRWAYS, INC. (EL PASO, TX) </p>
+    <p class="table-content-paragraph">C &amp; M AIRWAYS, INC. (EL PASO, TX) </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -21717,7 +21110,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">C&I CORPORATION </p>
+    <p class="table-content-paragraph">C&amp;I CORPORATION </p>
     </td>
     <td>
     <p class="table-content-paragraph">ROMANIA </p>
@@ -25749,7 +25142,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">COMMON SKY A & N LUFTFAHRT GMBH </p>
+    <p class="table-content-paragraph">COMMON SKY A &amp; N LUFTFAHRT GMBH </p>
     </td>
     <td>
     <p class="table-content-paragraph">AUSTRIA </p>
@@ -27573,7 +26966,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">D & D AVIATION (SALT LAKE CITY, UT) </p>
+    <p class="table-content-paragraph">D &amp; D AVIATION (SALT LAKE CITY, UT) </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -28077,7 +27470,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">DECCAN CARGO & EXPRESS LOGISTICS PVT LTD </p>
+    <p class="table-content-paragraph">DECCAN CARGO &amp; EXPRESS LOGISTICS PVT LTD </p>
     </td>
     <td>
     <p class="table-content-paragraph">INDIA </p>
@@ -33825,7 +33218,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">FEDERAL STATE BUDGETARY ORGANIZATION GAGARIN RESEARCH & TEST COSMONAUT TRAINING CENTER </p>
+    <p class="table-content-paragraph">FEDERAL STATE BUDGETARY ORGANIZATION GAGARIN RESEARCH &amp; TEST COSMONAUT TRAINING CENTER </p>
     </td>
     <td>
     <p class="table-content-paragraph">RUSSIAN FEDERATION </p>
@@ -35043,7 +34436,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">FLY & FUN, S.L. </p>
+    <p class="table-content-paragraph">FLY &amp; FUN, S.L. </p>
     </td>
     <td>
     <p class="table-content-paragraph">SPAIN </p>
@@ -35141,7 +34534,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">FLY AWAY GMBH & CO. KG </p>
+    <p class="table-content-paragraph">FLY AWAY GMBH &amp; CO. KG </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -36765,7 +36158,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">FSB FLUGSERVICE & DEVELOPMENT GMBH, BERLIN-SCHOENEFELD </p>
+    <p class="table-content-paragraph">FSB FLUGSERVICE &amp; DEVELOPMENT GMBH, BERLIN-SCHOENEFELD </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -37091,7 +36484,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">G & L AVIATION </p>
+    <p class="table-content-paragraph">G &amp; L AVIATION </p>
     </td>
     <td>
     <p class="table-content-paragraph">SOUTH AFRICA </p>
@@ -37875,7 +37268,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">GERLACH & ASSOCIATES, LLC D/B/A MIDWEST AIR LINK (VALPARAISO, IN) </p>
+    <p class="table-content-paragraph">GERLACH &amp; ASSOCIATES, LLC D/B/A MIDWEST AIR LINK (VALPARAISO, IN) </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -37903,7 +37296,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">GERMAN AIRWAYS GMBH & CO KG </p>
+    <p class="table-content-paragraph">GERMAN AIRWAYS GMBH &amp; CO KG </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -39723,7 +39116,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">GULF & CARIBBEAN CARGO, INC. (WATERFORD, MI) </p>
+    <p class="table-content-paragraph">GULF &amp; CARIBBEAN CARGO, INC. (WATERFORD, MI) </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -41253,7 +40646,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">HELICOPTER & AIRCRAFT SUPPORT SERVICES </p>
+    <p class="table-content-paragraph">HELICOPTER &amp; AIRCRAFT SUPPORT SERVICES </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED KINGDOM </p>
@@ -41267,7 +40660,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">HELICOPTER & AVIATION SERVICES LTD </p>
+    <p class="table-content-paragraph">HELICOPTER &amp; AVIATION SERVICES LTD </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED KINGDOM </p>
@@ -41981,7 +41374,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">HERON LUFTFAHRT GMBH & CO. KG, WALDSHUT-TIENGEN </p>
+    <p class="table-content-paragraph">HERON LUFTFAHRT GMBH &amp; CO. KG, WALDSHUT-TIENGEN </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -42359,7 +41752,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">HOLSTENAIR LUFTVERKEHRSSERVICE GMBH & CO. BETRIEBS-KG, LUEBECK </p>
+    <p class="table-content-paragraph">HOLSTENAIR LUFTVERKEHRSSERVICE GMBH &amp; CO. BETRIEBS-KG, LUEBECK </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -43903,7 +43296,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">INTEGRA MAP & GEOINFORMACION CONSULTING, S.L. </p>
+    <p class="table-content-paragraph">INTEGRA MAP &amp; GEOINFORMACION CONSULTING, S.L. </p>
     </td>
     <td>
     <p class="table-content-paragraph">SPAIN </p>
@@ -45111,7 +44504,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">J & P CORPORATE FLIGHTS, S.A. DE C.V. </p>
+    <p class="table-content-paragraph">J &amp; P CORPORATE FLIGHTS, S.A. DE C.V. </p>
     </td>
     <td>
     <p class="table-content-paragraph">MEXICO </p>
@@ -45643,7 +45036,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">JET EXECUTIVE INTERNATIONAL CHARTER GMBH & CO. KG, DUESSELDORF </p>
+    <p class="table-content-paragraph">JET EXECUTIVE INTERNATIONAL CHARTER GMBH &amp; CO. KG, DUESSELDORF </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -45797,7 +45190,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">JET POWER ARUBA CHARTERS & TRANSPORTATION COMPANY V.B.A. </p>
+    <p class="table-content-paragraph">JET POWER ARUBA CHARTERS &amp; TRANSPORTATION COMPANY V.B.A. </p>
     </td>
     <td>
     <p class="table-content-paragraph">NETHERLANDS </p>
@@ -46077,7 +45470,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">JETCALL GMBH & CO. KG </p>
+    <p class="table-content-paragraph">JETCALL GMBH &amp; CO. KG </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -47029,7 +46422,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">JUBA CARGO SERVICES & AVIATION CO. LTD </p>
+    <p class="table-content-paragraph">JUBA CARGO SERVICES &amp; AVIATION CO. LTD </p>
     </td>
     <td>
     <p class="table-content-paragraph">SUDAN </p>
@@ -47201,7 +46594,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">K & R AVIATION, LLC </p>
+    <p class="table-content-paragraph">K &amp; R AVIATION, LLC </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -49207,7 +48600,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">LEAF - LEASE & FLY LTD </p>
+    <p class="table-content-paragraph">LEAF - LEASE &amp; FLY LTD </p>
     </td>
     <td>
     <p class="table-content-paragraph">MALTA </p>
@@ -49613,7 +49006,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">LET'S FLY HELICOPTER&JET </p>
+    <p class="table-content-paragraph">LET'S FLY HELICOPTER&amp;JET </p>
     </td>
     <td>
     <p class="table-content-paragraph">FRANCE </p>
@@ -51325,7 +50718,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">M AND N EQUIPMENT, LLC D/B/A M & N AVIATION (CASPER, WY) </p>
+    <p class="table-content-paragraph">M AND N EQUIPMENT, LLC D/B/A M &amp; N AVIATION (CASPER, WY) </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -51367,7 +50760,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">M&N AVIATION (CAROLINA, PR) </p>
+    <p class="table-content-paragraph">M&amp;N AVIATION (CAROLINA, PR) </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -55011,7 +54404,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">NAEW&C FORCE E-3A FLEET </p>
+    <p class="table-content-paragraph">NAEW&amp;C FORCE E-3A FLEET </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -55431,7 +54824,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">NATIONAL OCEANIC & ATMOSPHERIC ADMINISTRATION (TAMPA, FL) </p>
+    <p class="table-content-paragraph">NATIONAL OCEANIC &amp; ATMOSPHERIC ADMINISTRATION (TAMPA, FL) </p>
     </td>
     <td>
     <p class="table-content-paragraph">UNITED STATES </p>
@@ -55753,7 +55146,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">NEDGISTIC EXPRESS SERVICES & AVIATION </p>
+    <p class="table-content-paragraph">NEDGISTIC EXPRESS SERVICES &amp; AVIATION </p>
     </td>
     <td>
     <p class="table-content-paragraph">NETHERLANDS </p>
@@ -59009,7 +58402,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">P & P FLOSS PICK MANUFACTURERS CC. </p>
+    <p class="table-content-paragraph">P &amp; P FLOSS PICK MANUFACTURERS CC. </p>
     </td>
     <td>
     <p class="table-content-paragraph">SOUTH AFRICA </p>
@@ -59317,7 +58710,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">PAKISTAN AVIATORS & AVIATION (PVT) LTD </p>
+    <p class="table-content-paragraph">PAKISTAN AVIATORS &amp; AVIATION (PVT) LTD </p>
     </td>
     <td>
     <p class="table-content-paragraph">PAKISTAN </p>
@@ -61249,7 +60642,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">PLATOON AVIATION GMBH & CO KG </p>
+    <p class="table-content-paragraph">PLATOON AVIATION GMBH &amp; CO KG </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -66381,7 +65774,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">RUMUGU AIR & SPACE NIGERIA LIMITED </p>
+    <p class="table-content-paragraph">RUMUGU AIR &amp; SPACE NIGERIA LIMITED </p>
     </td>
     <td>
     <p class="table-content-paragraph">NIGERIA </p>
@@ -66735,7 +66128,7 @@
    <tbody>
 <tr>
     <td>
-    <p class="table-content-paragraph">S&S ORINOCO AVIATION C.A. </p>
+    <p class="table-content-paragraph">S&amp;S ORINOCO AVIATION C.A. </p>
     </td>
     <td>
     <p class="table-content-paragraph">VENEZUELA </p>
@@ -68583,7 +67976,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">SERVICIOS AEREOS A&H, C.A. </p>
+    <p class="table-content-paragraph">SERVICIOS AEREOS A&amp;H, C.A. </p>
     </td>
     <td>
     <p class="table-content-paragraph">VENEZUELA </p>
@@ -71621,7 +71014,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">SKYJETS & SUPPORT, S.A. DE C.V. </p>
+    <p class="table-content-paragraph">SKYJETS &amp; SUPPORT, S.A. DE C.V. </p>
     </td>
     <td>
     <p class="table-content-paragraph">MEXICO </p>
@@ -81187,7 +80580,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">TYROLEAN JET SERVICE NFG. GMBH & CO. KG </p>
+    <p class="table-content-paragraph">TYROLEAN JET SERVICE NFG. GMBH &amp; CO. KG </p>
     </td>
     <td>
     <p class="table-content-paragraph">AUSTRIA </p>
@@ -83169,7 +82562,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">VEGA AVIATION & ENG. SYSTEMS CO. LTD </p>
+    <p class="table-content-paragraph">VEGA AVIATION &amp; ENG. SYSTEMS CO. LTD </p>
     </td>
     <td>
     <p class="table-content-paragraph">SUDAN </p>
@@ -84699,7 +84092,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">WELCOME AIR LUFTFAHRT- GMBH & CO KG </p>
+    <p class="table-content-paragraph">WELCOME AIR LUFTFAHRT- GMBH &amp; CO KG </p>
     </td>
     <td>
     <p class="table-content-paragraph">AUSTRIA </p>
@@ -86219,7 +85612,7 @@
    </tr>
 <tr>
     <td>
-    <p class="table-content-paragraph">ZEMAN FLUGTECHNIK & LOGISTIK GMBH </p>
+    <p class="table-content-paragraph">ZEMAN FLUGTECHNIK &amp; LOGISTIK GMBH </p>
     </td>
     <td>
     <p class="table-content-paragraph">GERMANY </p>
@@ -86511,29 +85904,4 @@
     <p class="table-content-paragraph">MLU </p>
     </td>
    </tr>
- </tbody></table><noscript><img src="https://www.faa.gov/akam/13/pixel_57947db2?a=dD03MDc4MWNjNTViYmY3MzRlOGY0NTdiMDZjYzY3MmM2MGU1MjkxZGExJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body></main></div><footer class="main-footer">
-
-
-<nav id="paginator__nav" class="usa-pagination" role="navigation" aria-label="Pagination"><a class="page__nav" aria-label="Aircraft Company/Telephony/Three−Letter Designator Encode" href="./chap_3.html"><i class="fa fa-angle-left" aria-hidden="true"></i>Previous</a> | <a class="page__nav" aria-label="Top of the Page" href="#atc-body">Top</a> | <a class="page__nav" aria-label="Next Page" href="./chap3_section_2.html">Next<i class="fa fa-angle-right" aria-hidden="true"></i></a></nav>
-<div class="center footer-details">
-      <ul class="footer-items">
-        <li class="footer-item"><a href="./" arial-label="FAA Order 7340.2" rel="noopener">7340.2</a> | </li>
-        <li class="footer-item"><a href="http://www.faa.gov/air_traffic/publications/">ATPUBS</a> | </li>
-        <li class="footer-item"><a href="http://www.faa.gov" target="_blank" aria-label="FAA Order 7340.2 (New Window)" rel="noopener">FAA</a> | </li>
-        <li><a class="suggestion-contact" href="mailto:9-AJV-P-HQ-Correspondence@faa.gov">Send your comments regarding this website.</a></li>
-      </ul>
-      <div>
-       </div>
-       </div>
-  </footer>
-<script src="./assets/js/atc-main.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D2QSJYE7DF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D2QSJYE7DF');
-</script></body>
-</html>
+ </tbody></table>
