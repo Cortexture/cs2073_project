@@ -62,7 +62,7 @@
         - [x] Last Name
         - [x] Middle Inital
         - [x] Title
-    - [ ] Flight Crew
+    - [x] Flight Crew
         - [ ] Captain
         - [ ] 1st Officer
         - [ ] Flight Crew
@@ -72,16 +72,14 @@
         - [ ] Regular Class
         - [ ] Economy Class
     - [ ] Flight Route
-        - [ ] Plane
-        - [ ] Depart Time
-        - [ ] Depart Date
-        - [ ] Flight Crew (Relating to the Flight Crew struct)
-        - [ ] Seat Map (Relating to the Seat Map struct)
-    - [ ] Ticket
-        - [ ] Passenger (Relating to the Passenger Struct)
-        - [ ] Flight
-        - [ ] Purchase Amount
-        - [ ] Seat
+        - [x] Plane
+        - [x] Depart Time
+        - [x] Depart Date
+        - [x] Flight Crew (Relating to the Flight Crew struct)
+    - [x] Ticket
+        - [x] Flight
+        - [x] Purchase Amount
+        - [x] Seat
 - [ ] Dashboards to monitor Details
     - [ ] Management Specific
     - [ ] Airline Specific
