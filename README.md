@@ -36,7 +36,7 @@
 - [ ] Online Ticket Sale Confirmation
 
 ## Management
-- [ ] Structs for Management
+- [x] Structs for Management
     - [x] Planes
         - [x] Identifier
         - [x] Type
