@@ -2,21 +2,25 @@
 
 int ticketTypes(void) {
   char ticket[4][20]= {"1: Economy","2: Business","3: (Premium)Economy","4: First class"};
-  int ticketType = -1;
+  int ticket_type = -1;
   printf("The following list is of all ticket types, please enter the number:\n");
   do {
     for (int i = 0; i < 4; i++) {
-      printf("%s\n", ticket[i]); scanf("%d", &ticketType);
+      printf("%s\n", ticket[i]); scanf("%d", &ticket_type);
     }
-  } while (scanf("%d", &ticketType) != 1 && ticketType >= 1 && ticketType <= 4);
-  return ticketType;
+  } while (scanf("%d", &ticket_type) != 1 && ticket_type >= 1 && ticket_type <= 4);
+  return ticket_type;
 }
-char availableDestinations(void) {
+int availableDestinations(void) {
   printf("The following list is all available destinations:\n");
   char destinations[4][20]= {"1: Maui,Hawaii","2: Dallas,Texas","3: Paris,France","4: Tokyo,Japan"};
-  for (int i=0; i<4; i++){
-    printf("%s\n", destinations[i]);
-  }
+  int destination_choice = -1;
+  do {
+    for (int i = 0; i < 4; i++) {
+      printf("%s\n", destinations[i]); scanf("%d", &destination_choice);
+    }
+  } while (scanf("%d", &destination_choice) != 1 && destination_choice >= 1 && destination_choice <= 4);
+  return destination_choice;
 }
 void arrivalDates(void) {
   printf("The following list is avalible arrival dates:\n");
@@ -40,7 +44,7 @@ int ticketChoice;
 int numTravellers;
 int arrivalChoice;
 printf("How many people are you travelling with?\n"); scanf("%d", &numTravellers);
-while(numTravellers>10) {
+while(numTravellers > 10) {
   printf("Error: Group size is too large please try again\n"); scanf("%d", &numTravellers);
 }
 ticketTypes(); printf("What ticket type would you like? (1-4)\n"); scanf("%d",&ticketChoice);
