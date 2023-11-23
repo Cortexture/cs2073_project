@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+void nothing(void) {}
 int ticketTypes(void) {
   char ticket[4][20]= {"1: Economy","2: Business","3: (Premium)Economy","4: First class"};
   int ticket_type = -1;
@@ -38,35 +39,25 @@ void departureDates(void) {
 }
 
 int main(void) {
-int destinationChoice;
-int departChoice;
-int ticketChoice;
-int numTravellers;
-int arrivalChoice;
-printf("How many people are you travelling with?\n"); scanf("%d", &numTravellers);
-while(numTravellers > 10) {
-  printf("Error: Group size is too large please try again\n"); scanf("%d", &numTravellers);
-}
-ticketTypes(); printf("What ticket type would you like? (1-4)\n"); scanf("%d",&ticketChoice);
-while(ticketChoice>4) {
-  printf("Error: Please pick an option between 1 and 4\n\n"); scanf("%d",&ticketChoice);
-}
-availableDestinations(); printf("where would you like to go?(1-4)\n"); scanf("%d", &destinationChoice);
-while(destinationChoice>4 || destinationChoice<1) {
-printf("Error: Please pick a destination between 1 and 4.\n\n"); scanf("%d", &destinationChoice);
-}
-arrivalDates(); printf("When would you like to arrive\n"); scanf("%d", &arrivalChoice);
-while(arrivalChoice>20) {
+int numTravellers; do {
+  printf("How many people are you travelling with?\n"); scanf("%d", &numTravellers);
+  (numTravellers > 10) ? printf("Error: Group size is too large please try again\n") : nothing();
+} while(numTravellers > 10);
+int ticketChoice = ticketTypes();
+int destinationChoice = availableDestinations();
+int arrivalChoice = -1; do {
+  arrivalDates(); printf("When would you like to arrive:\n"); scanf("%d", &arrivalChoice);
+  (arrivalChoice > 20) ? printf("Error: Please pick a date between 1 and 20\n") : nothing();
+} while(arrivalChoice > 20);
+ printf("When would you like to arrive\n"); scanf("%d", &arrivalChoice);
+while(arrivalChoice > 20) {
   printf("Error: Please pick a date between 1 and 20.\n\n"); scanf("%d", &arrivalChoice);
 }
+int departChoice;
 departureDates(); printf("When would you like to depart\n"); scanf("%d", &departChoice);
-while(departChoice>20) {
+while(departChoice > 20) {
   printf("Error: Please pick a date between 1 and 20.\n"); scanf("%d", &departChoice);
 }
 return 0;
 }
-/*
- * opens at the top and loop 
- * destinatiosn ticket type verification
- * confirmation number would be the loop iteration
- */
+// write to a file like the hotel stuff, include names for jazz
