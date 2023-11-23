@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void nothing(void) {}
 int ticketTypes(void) {
   char ticket[4][20]= {"1: Economy","2: Business","3: (Premium)Economy","4: First class"};
   int ticket_type = -1;
@@ -81,4 +80,3 @@ int main(void) {
   } fclose(file);
   return 0;
 }
-// write to a file like the hotel stuff, include names for jazz
