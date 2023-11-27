@@ -1,8 +1,7 @@
 #include "../structs.h"
+#include "../helper_functions.h"
 
 int hc_planes(void) {
   Plane planes[50];
-  srand(RAND_SEED);
-  // ((float)rand())/RAND_MAX % range + min;
   return 0;
 }
