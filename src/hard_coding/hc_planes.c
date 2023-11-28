@@ -42,9 +42,3 @@ int main(void) {
   }
   return 0;
 }
-/*
- * 
-  FILE* file = fopen("data.txt", "r");
-  file == NULL ?  exit(1) : nothing() ;
-      fscanf(file, "%d ", &array[i][j]);
-*/
