@@ -1,4 +1,5 @@
 #include <stdbool.h>
+#include <stdlib.h>
 
 typedef struct {
   int month;
@@ -27,7 +28,8 @@ typedef struct {
 typedef struct {
   char identifier[7]; // ICAO 3 letters for company name, 4 numbers for ID
   char type[4]; // ICAO Type Code
-  float range;
+  int range;
+  int range_left;
   int max_seats;
 } Plane;
 

@@ -17,6 +17,7 @@ int main(void) {
   srand(time(NULL));
   for (int i = 0; i < num_plane; i++) {
     planes[i].range = random_num(3400, 6000);
+    planes[i].range_left = (int) planes[i].range * frand();
   }
   return 0;
 }
