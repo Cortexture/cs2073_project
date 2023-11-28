@@ -20,8 +20,7 @@ int main(void) {
   FILE* three_letter_file = fopen("three_letter.txt", "r");
   three_letter_file == NULL ? exit(1) : nothing();
   for (int i = 0; i < num_plane; i++) {
-    char three_letter[3];
-    fscanf(three_letter_file, "%s\n", three_letter);
+    char three_letter[3]; fscanf(three_letter_file, "%s\n", three_letter);
     int four_num = random_num(9999, 0);
     char four_num_string[4]; sprintf(four_num_string, "%d", four_num);
     char _identifier[7]; int num_length = strlen(four_num_string);
@@ -33,7 +32,12 @@ int main(void) {
     }
     strcpy(planes[i].identifier, _identifier);
   } fclose(three_letter_file);
-  // FILE* identifier = fopen("plane_identifiers.txt", "r");
+  FILE* type_file = fopen("plane_identifiers.txt", "r");
+  type_file == NULL ? exit(1) : nothing();
+  for (int i = 0; i < num_plane; i++) {
+    char type_code[4]; fscanf(type_file, "%s\n", type_code);
+    strcpy(planes[i].type, type_code);
+  } fclose(type_file);
   srand(time(NULL));
   for (int i = 0; i < num_plane; i++) {
     planes[i].range = random_num(3400, 6000);

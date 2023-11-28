@@ -16,7 +16,6 @@ typedef struct {
 typedef struct {
   char first_name[15];
   char last_name[30];
-  char middle_inital[1];
 } Name;
 
 typedef struct {
