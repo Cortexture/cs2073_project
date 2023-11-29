@@ -8,10 +8,19 @@
 #include "../helper_functions.h"
 
 int random_num(int range, int minimum) {
-  return ((int)rand() * RAND_MAX) % (range - 1) + minimum;
+  return (int) (rand()) % range + minimum;
 }
 float frand(void) {
   return ((double)rand() / RAND_MAX);
+}
+
+void reverseString(char str[]) {
+  int length = strlen(str); int start = 0; int end = length - 1;
+  while (start < end) {
+    char temp = str[start];
+    str[start] = str[end]; str[end] = temp;
+    start++; end--;
+  }
 }
 
 int main(void) {
@@ -20,18 +29,30 @@ int main(void) {
   FILE* three_letter_file = fopen("three_letter.txt", "r");
   three_letter_file == NULL ? exit(1) : nothing();
   for (int i = 0; i < num_plane; i++) {
-    char three_letter[3]; fscanf(three_letter_file, "%s\n", three_letter);
-    int four_num = random_num(9999, 0);
-    char four_num_string[4]; sprintf(four_num_string, "%d", four_num);
-    char _identifier[7]; 
-    int num_length = strlen(four_num_string);
-    printf("%d", num_length);
-    switch (num_length) {
-      case 1: sprintf(_identifier, "%s%s", "000", four_num_string);
-      case 2: sprintf(_identifier, "%s%s", "00", four_num_string);
-      case 3: sprintf(_identifier, "%s%s", "0", four_num_string);
+    char three_letter[4]; fscanf(three_letter_file, "%s\n", three_letter);
+    int four_num = random_num(999, 0);
+    char serial[5]; sprintf(serial, "%d", four_num);
+    int num_length_left = strlen(serial);
+    // printf("%d\n", num_length_left);
+    char one_zero[2] = "0"; char two_zero[3] = "00"; char three_zero[4] = "000";
+    switch (num_length_left) {
+      case 4:
+        break;
+      case 3: 
+        strcat(serial, one_zero); break;
+      case 2: 
+        strcat(serial, two_zero); break;
+      case 1: 
+        strcat(serial, three_zero); break;
+      default: 
+        printf("nicer\n"); break;
     }
-    strcpy(planes[i].identifier, _identifier);
+    // now i need to reverse the string
+    printf("Before reversing %s\n", serial);
+    reverseString(serial); 
+    printf("After reversing %s\n", serial);
+    strcat(three_letter, serial);
+    strcpy(planes[i].identifier, three_letter);
   } fclose(three_letter_file);
   FILE* type_file = fopen("plane_identifiers.txt", "r");
   type_file == NULL ? exit(1) : nothing();
@@ -47,7 +68,7 @@ int main(void) {
   }
 
   for (int i = 0; i < 2; i++) {
-    printf("%s -- %s -- %d -- %d -- %d\n", 
+    printf("%s --- %s -- %d -- %d -- %d\n", 
         planes[i].identifier, planes[i].type, 
         planes[i].range, planes[i].range_left,
         planes[i].max_seats);
