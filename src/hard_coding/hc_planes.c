@@ -68,12 +68,5 @@ int main(void) {
     planes[i].range_left = (int) planes[i].range * frand();
     planes[i].max_seats = random_num(250, 50);
   }
-
-  for (int i = 0; i < 2; i++) {
-    printf("%s --- %s -- %d -- %d -- %d\n", 
-        planes[i].identifier, planes[i].type, 
-        planes[i].range, planes[i].range_left,
-        planes[i].max_seats);
-  }
   return 0;
 }
