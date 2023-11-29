@@ -25,8 +25,8 @@ typedef struct {
 } SeatType;
 
 typedef struct {
-  char identifier[7]; // ICAO 3 letters for company name, 4 numbers for ID
-  char type[4]; // ICAO Type Code
+  char identifier[8]; // ICAO 3 letters for company name, 4 numbers for ID
+  char type[5]; // ICAO Type Code
   int range;
   int range_left;
   int max_seats;

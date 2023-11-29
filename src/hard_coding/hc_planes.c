@@ -51,8 +51,10 @@ int main(void) {
     printf("Before reversing %s\n", serial);
     reverseString(serial); 
     printf("After reversing %s\n", serial);
-    strcat(three_letter, serial);
-    strcpy(planes[i].identifier, three_letter);
+    char _identifier[8];
+    strcat(three_letter, serial); strcat(three_letter, "\0");
+    strcpy(_identifier, three_letter);
+    strcpy(planes[i].identifier, _identifier);
   } fclose(three_letter_file);
   FILE* type_file = fopen("plane_identifiers.txt", "r");
   type_file == NULL ? exit(1) : nothing();
