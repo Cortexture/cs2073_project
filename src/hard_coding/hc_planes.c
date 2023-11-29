@@ -23,12 +23,13 @@ int main(void) {
     char three_letter[3]; fscanf(three_letter_file, "%s\n", three_letter);
     int four_num = random_num(9999, 0);
     char four_num_string[4]; sprintf(four_num_string, "%d", four_num);
-    char _identifier[7]; int num_length = strlen(four_num_string);
+    char _identifier[7]; 
+    int num_length = strlen(four_num_string);
+    printf("%d", num_length);
     switch (num_length) {
       case 1: sprintf(_identifier, "%s%s", "000", four_num_string);
       case 2: sprintf(_identifier, "%s%s", "00", four_num_string);
       case 3: sprintf(_identifier, "%s%s", "0", four_num_string);
-      default: nothing();
     }
     strcpy(planes[i].identifier, _identifier);
   } fclose(three_letter_file);
@@ -43,6 +44,13 @@ int main(void) {
     planes[i].range = random_num(3400, 6000);
     planes[i].range_left = (int) planes[i].range * frand();
     planes[i].max_seats = random_num(250, 50);
+  }
+
+  for (int i = 0; i < 2; i++) {
+    printf("%s -- %s -- %d -- %d -- %d\n", 
+        planes[i].identifier, planes[i].type, 
+        planes[i].range, planes[i].range_left,
+        planes[i].max_seats);
   }
   return 0;
 }
