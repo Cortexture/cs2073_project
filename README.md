@@ -81,7 +81,7 @@
         - [x] Purchase Amount
         - [x] Seat
 - [ ] Hard Coding Struct Information
-    - [ ] Planes
+    - [x] Planes
     - [ ] Airport
     - [ ] Names
     - [ ] Date and Times
