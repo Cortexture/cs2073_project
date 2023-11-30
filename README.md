@@ -10,13 +10,13 @@
 - [ ] Online Portal
     - [ ] Generate Flight Information by Destination
         - [ ] Flight Data
-            - [x] Destination
-            - [x] Departure Dates
-            - [x] Departure Time
+            - [ ] Destination
+            - [ ] Departure Dates
+            - [ ] Departure Time
             - [ ] Arrival Dates
             - [ ] Arrival Time
             - [ ] Number of Guests
-            - [x] Type of Ticket (Roundtrip, One Way, Multi-city)
+            - [ ] Type of Ticket (Roundtrip, One Way, Multi-city)
             - [ ] Flight Insurance (price drop protection)
             - [ ] Seat Number
             - [ ] Seat Types
