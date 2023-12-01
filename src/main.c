@@ -27,10 +27,10 @@ int main(void) {
     }
     int destination_choice = availableDestinations();
     switch (destination_choice) {
-      case 1: fprintf(file, "%s, ", maui);
-      case 2: fprintf(file, "%s, ", dallas);
-      case 3: fprintf(file, "%s, ", paris);
-      case 4: fprintf(file, "%s, ", tokyo);
+      case 1: fprintf(file, "%s, ", maui); break;
+      case 2: fprintf(file, "%s, ", dallas); break;
+      case 3: fprintf(file, "%s, ", paris); break;
+      case 4: fprintf(file, "%s, ", tokyo); break;
       default: return 1;
     }
     int arrival_choice = -1; do {
