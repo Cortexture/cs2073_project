@@ -15,7 +15,7 @@ int main(void) {
   char* premium_economy = "(Premium) Economy"; char* first_class = "First Class";
   char* maui = "Maui, Hawaii"; char* dallas = "Dallas, Texas";
   char* paris = "Paris, France"; char* tokyo = "Tokyo, Japan";
-  for (int i = 0; i <= num_traveller; i++) {
+  for (int i = 1; i <= num_traveller; i++) {
     fprintf(file, "%d, ", i);
     int ticket_choice = ticketTypes();
     switch (ticket_choice) {
@@ -42,7 +42,7 @@ int main(void) {
       departureDates(); printf("When would you like to depart\n"); scanf("%d", &depart_choice);
       (depart_choice > 20) ? printf("Error: Please pick a date between 1 and 20\n") : nothing();
     } while(depart_choice > 20);
-      fprintf(file, "Departing November %d, ", depart_choice);
+      fprintf(file, "Departing November %d\n", depart_choice);
   } fclose(file);
   return 0;
 }
