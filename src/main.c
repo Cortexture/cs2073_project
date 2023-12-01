@@ -19,10 +19,10 @@ int main(void) {
     fprintf(file, "%d, ", i);
     int ticket_choice = ticketTypes();
     switch (ticket_choice) {
-      case 1: fprintf(file, "%s, ", economy);
-      case 2: fprintf(file, "%s, ", business);
-      case 3: fprintf(file, "%s, ", premium_economy);
-      case 4: fprintf(file, "%s, ", first_class);
+      case 1: fprintf(file, "%s, ", economy); break;
+      case 2: fprintf(file, "%s, ", business); break;
+      case 3: fprintf(file, "%s, ", premium_economy); break;
+      case 4: fprintf(file, "%s, ", first_class); break;
       default: return 1;
     }
     int destination_choice = availableDestinations();
