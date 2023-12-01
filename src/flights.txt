@@ -1,0 +1,2 @@
+1, Economy, Maui, Hawaii, Arriving November 4, Departing November 5
+2, Business, Paris, France, Arriving November 5, Departing November 15
