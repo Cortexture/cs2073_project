@@ -6,9 +6,9 @@ int ticketTypes(void) {
   printf("The following list is of all ticket types, please enter the number:\n");
   do {
     for (int i = 0; i < 4; i++) {
-      printf("%s\n", ticket[i]); scanf("%d", &ticket_type);
-    }
-  } while (scanf("%d", &ticket_type) != 1 && ticket_type >= 1 && ticket_type <= 4);
+      printf("%s\n", ticket[i]); 
+    } scanf("%d", &ticket_type);
+  } while (ticket_type < 1 || ticket_type > 4);
   return ticket_type;
 }
 int availableDestinations(void) {
@@ -17,9 +17,9 @@ int availableDestinations(void) {
   int destination_choice = -1;
   do {
     for (int i = 0; i < 4; i++) {
-      printf("%s\n", destinations[i]); scanf("%d", &destination_choice);
-    }
-  } while (scanf("%d", &destination_choice) != 1 && destination_choice >= 1 && destination_choice <= 4);
+      printf("%s\n", destinations[i]); 
+    } scanf("%d", &destination_choice);
+  } while (destination_choice < 1 || destination_choice > 4);
   return destination_choice;
 }
 void arrivalDates(void) {
